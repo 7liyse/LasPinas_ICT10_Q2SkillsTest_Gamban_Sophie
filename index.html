@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table Element Checker</title>
+    <style>
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+            background-color: #212321;
+            color: #15ee15;
+            margin: 0;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        main {
+            background-color: white;
+            max-width: 350px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 5px;
+        }
+
+        #output {
+            margin-top: 16px;
+            text-align: left;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="reactor"></div>
+        <h1>Periodic Table Element Checker</h1>
+    </header>
+
+    <main>
+        <form onsubmit="return false;">
+            <h5>🧪 Input a non-metal element; results will appear below if it is in the list.</h5>
+            <input type="text" id="non_metal" placeholder="Enter a Non Metal">
+            <br><br>
+            <input type="button" py-click="find_element" value="Enter" id="submit_btn">
+        </form>
+        <div id="output"></div>
+    </main>
+
+    <script type="py" src="./main.py"></script>
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</body>
+</html>
